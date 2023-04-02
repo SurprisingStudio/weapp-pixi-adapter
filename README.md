@@ -1,5 +1,8 @@
 # weapp-adapter for pixi.js
 
+export NODE_OPTIONS=--openssl-legacy-provider
+
+
 ## 编译
 
 ```

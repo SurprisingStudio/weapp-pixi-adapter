@@ -11,7 +11,7 @@ export default function Canvas() {
 
   canvas.type = 'canvas'
 
-  canvas.__proto__.__proto__ = new HTMLElement('canvas')
+  canvas.__proto__.__proto__ = new HTMLCanvasElement('canvas')
 
   const _getContext = canvas.getContext
 
@@ -27,7 +27,7 @@ export default function Canvas() {
   }
 
   // pixi.js mapPositionToPoint hack
-  canvas.__proto__.parentElement = true
+  // canvas.__proto__.parentElement = true
 
   return canvas
 }

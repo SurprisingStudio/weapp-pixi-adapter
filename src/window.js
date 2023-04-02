@@ -17,11 +17,11 @@ export * from './constructor'
 const canvas = new Canvas()
 
 export { canvas }
-export { setTimeout }
-export { setInterval }
-export { clearTimeout }
-export { clearInterval }
-export { requestAnimationFrame }
-export { cancelAnimationFrame }
+// export { setTimeout }
+// export { setInterval }
+// export { clearTimeout }
+// export { clearInterval }
+// export { requestAnimationFrame }
+// export { cancelAnimationFrame }
 
 export TouchEvent from './EventIniter/TouchEvent'
