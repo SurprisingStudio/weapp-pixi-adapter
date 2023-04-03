@@ -16,7 +16,10 @@ export * from './constructor'
 // 暴露全局的 canvas
 const canvas = new Canvas()
 
-export { canvas }
+// Fallback Intl
+const Intl = false
+
+export { canvas, Intl }
 // export { setTimeout }
 // export { setInterval }
 // export { clearTimeout }

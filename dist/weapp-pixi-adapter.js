@@ -1700,7 +1700,7 @@ function noop() {}
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.TouchEvent = exports.canvas = exports.location = exports.localStorage = exports.HTMLElement = exports.FileReader = exports.Audio = exports.Image = exports.WebSocket = exports.XMLHttpRequest = exports.navigator = exports.document = undefined;
+exports.TouchEvent = exports.Intl = exports.canvas = exports.location = exports.localStorage = exports.HTMLElement = exports.FileReader = exports.Audio = exports.Image = exports.WebSocket = exports.XMLHttpRequest = exports.navigator = exports.document = undefined;
 
 var _WindowProperties = __webpack_require__(/*! ./WindowProperties */ "./src/WindowProperties.js");
 
@@ -1791,7 +1791,11 @@ exports.location = _location3.default;
 // 暴露全局的 canvas
 var canvas = new _Canvas2.default();
 
+// Fallback Intl
+var Intl = false;
+
 exports.canvas = canvas;
+exports.Intl = Intl;
 // export { setTimeout }
 // export { setInterval }
 // export { clearTimeout }
